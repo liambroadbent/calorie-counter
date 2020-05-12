@@ -1,0 +1,50 @@
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.5s ease-out;
+  &:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-image: linear-gradient(120deg, $red, $pink);
+    opacity: 0;
+    z-index: $z5;
+  }
+}
+
+.page-leave-active {
+  &:before {
+    animation: expand 0.15s ease forwards;
+    @keyframes expand {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
+.page-enter-active {
+  &:before {
+    animation: expand2 0.15s ease forwards;
+    @keyframes expand2 {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}

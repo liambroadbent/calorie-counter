@@ -17,18 +17,10 @@
     </g>
   </svg>
 </template>
-<style>
+<style lang="scss">
+@import 'assets/css/setup/variables';
 .NuxtLogo {
   animation: 1s appear;
-  margin: auto;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  margin:3rem 0;
 }
 </style>

@@ -1,0 +1,38 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  @include font(5rem, 600, 1.2, $red);
+  margin-bottom: 3rem;
+}
+
+h2 {
+  @include font(4rem, 600, 1.2, $grey2);
+  margin-bottom: 2rem;
+}
+
+h3 {
+  @include font(3rem, 600, 1, $red);
+  margin-bottom: 1rem;
+}
+
+h4 {
+  @include font(2.5rem, 600, 1.2, $red);
+}
+
+h5 {
+  @include font(2rem, 600, 1.2, $red);
+}
+
+p {
+  @include font(1.6rem, 300, 1.2, $black);
+}
+
+ul {
+  list-style: none;
+  li {
+    padding-bottom: 1rem;
+  }
+}
+

@@ -1,0 +1,12 @@
+@charset 'utf-8';
+
+@import 'setup/mixins';
+@import 'setup/variables';
+@import 'setup/base';
+@import 'setup/typography';
+
+@import 'component/buttons';
+
+@import 'animations/page';
+@import 'animations/general';
+
